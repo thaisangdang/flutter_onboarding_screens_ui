@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepPurpleAccent[100],
         // AutomaticallyImplyLeading is true by default, 
         // but since we used pushReplacement, no back arrow appears.
       ),
@@ -16,11 +16,6 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.home, 
-              size: 100, 
-              color: Colors.blue,
-            ),
             SizedBox(height: 20),
             Text(
               'Welcome Home!',
@@ -32,7 +27,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               'You have completed the onboarding.',
-              style: TextStyle(fontSize: 18, color: Colors.grey),
+              style: TextStyle(fontSize: 18, color: Colors.black),
             ),
           ],
         ),

@@ -52,7 +52,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   onTap: () {
                     _controller.jumpToPage(2); // Jump to end
                   },
-                  child: const Text('Skip'),
+                  child: const Text(
+                    'Skip',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
 
                 // DOT INDICATOR
@@ -60,7 +63,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   controller: _controller, 
                   count: 3,
                   effect: const WormEffect( // Choose your effect: Worm, Slide, Scale, etc.
-                    activeDotColor: Colors.deepPurple,
+                    activeDotColor: Colors.white,
                     dotColor: Colors.grey,
                   ),
                 ),
@@ -77,7 +80,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             }),
                           );
                         },
-                        child: const Text('Done'),
+                        child: const Text(
+                          'Done',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       )
                     : GestureDetector(
                         onTap: () {
@@ -86,7 +92,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             curve: Curves.easeIn,
                           );
                         },
-                        child: const Text('Next'),
+                        child: const Text(
+                          'Next',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
               ],
             ),
