@@ -28,7 +28,7 @@ By building this project, you will learn:
 
 1. **Ensure you are in the project directory:**
     
-    `cd onboarding_screens`
+    `cd flutter_onboarding_screens`
     
 2. **Install Dependencies:**
     
